@@ -1,6 +1,5 @@
 <script setup>
 import WelcomeItem from './WelcomeItem.vue'
-
 </script>
 
 <template>
@@ -11,14 +10,12 @@ import WelcomeItem from './WelcomeItem.vue'
     <template #heading>VueRoute</template>
 
     Mas informacion sobre
-    <a href="https://router.vuejs.org/" target="_blank" rel="noopener">VueRoute</a>
-    pagina oficial 
+    <router-link to="/VueRoutePage">VueRoute</router-link>
+    pagina oficial
   </WelcomeItem>
   <WelcomeItem>
     <template #icon>
       <DocumentationIcon />
     </template>
-    
   </WelcomeItem>
-
 </template>

@@ -29,6 +29,18 @@ const router = createRouter({
       name: 'ejercicio3',
       component: () => import('../views/ejercicio3.vue')
     }
+    ,
+    {
+      path: '/ejercicio3.1',
+      name: 'ejercicio3.1',
+      component: () => import('../views/ejercicio3.1.vue')
+    }
+    ,
+    {
+      path: '/VueRoutePage',
+      name: 'VueRoutePage',
+      component: () => import('../views/VueRoutePage.vue')
+    }
   ]
 })
 

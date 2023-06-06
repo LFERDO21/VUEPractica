@@ -29,40 +29,25 @@
     <br>
   
     <div>
-      <p v-if="isDisplayed">Este párrafo se muestra si isDisplayed es verdadero.</p>
-  
-      <ul>
-        <li v-for="item in items" :key="item.id">{{ item }}</li>
-      </ul>
-  
-      <button v-bind:disabled="isDisabled">Haz clic</button>
-  
-      <input type="text" v-model="inputValue">
-  
-      <p v-show="isShown">Este párrafo se muestra/oculta con la directiva v-show.</p>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        isDisplayed: true,
-        items: ['Elemento 1', 'Elemento 2', 'Elemento 3'],
-        isDisabled: false,
-        inputValue: '',
-        isShown: true
-      };
+    <input v-model="message" type="text">
+    <button @click="showPopup">Mostrar mensaje</button>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      message: ''
+    };
+  },
+  methods: {
+    showPopup() {
+      alert(this.message);
     }
-  };
-  </script>
-  <style scoped>
-  
-  h3 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    font-size: 2rem;
-    top: -10px;
   }
-  </style>
-  
+};
+</script>
+
+
+

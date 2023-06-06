@@ -17,6 +17,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/cicloForLocal">Ejercicio1.1</RouterLink>
         <RouterLink to="/ejercicio2">Ejercicio2</RouterLink>
         <RouterLink to="/ejercicio3">Ejercicio3</RouterLink>
+        <RouterLink to="/ejercicio3.1">Ejercicio3.1</RouterLink>
       </nav>
     </div>
   </header>
